@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="857.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.WelcomeController">
+   <children>
+      <Label layoutX="200.0" layoutY="38.0" prefHeight="63.0" prefWidth="505.0" text="Project GameOn">
+         <font>
+            <Font name="Castellar" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="287.0" layoutY="474.0" text="Checkout ">
+         <font>
+            <Font name="Berlin Sans FB" size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="419.0" layoutY="470.0" mnemonicParsing="false" onAction="#showHallofFame" text="HALL OF FAME">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblName" layoutX="122.0" layoutY="145.0" prefHeight="33.0" prefWidth="390.0" text="Hi Onkar">
+         <font>
+            <Font name="Cooper Black" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="196.0" text="What would you like to play?">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="134.0" layoutY="266.0" prefHeight="150.0" prefWidth="589.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#showtttOptions" prefHeight="113.0" prefWidth="202.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Cooper Black" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="140.0" fitWidth="220.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/tttThumnail.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#showSudokuOptions" prefHeight="113.0" prefWidth="194.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Cooper Black" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="147.0" fitWidth="240.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/sudoku.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+      <Button layoutX="23.0" layoutY="50.0" mnemonicParsing="false" onAction="#showLogin" text="Back">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Button>
+   </children>
+   <stylesheets>
+      <URL value="@login.css" />
+   </stylesheets>
+</AnchorPane>

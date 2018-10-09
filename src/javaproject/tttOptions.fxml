@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="588.0" prefWidth="793.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.TttOptionsController">
+    <stylesheets>
+        <URL value="@tttoptions.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="217.0" layoutY="35.0" prefHeight="63.0" prefWidth="351.0" text="Tic Tac Toe">
+         <font>
+            <Font name="Castellar" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="188.0" prefHeight="31.0" prefWidth="220.0" text="Choose Opponent:">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbSecondP" layoutX="382.0" layoutY="188.0" mnemonicParsing="false" onAction="#toggleDifficulty" prefHeight="31.0" prefWidth="186.0" text="Second Player">
+         <toggleGroup>
+            <ToggleGroup fx:id="opponent" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbComputerP" layoutX="382.0" layoutY="248.0" mnemonicParsing="false" onAction="#toggleDifficulty" prefHeight="31.0" prefWidth="186.0" selected="true" text="Computer" toggleGroup="$opponent">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="92.0" layoutY="331.0" prefHeight="31.0" prefWidth="220.0" text="Level of Difficulty:">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbHard" layoutX="382.0" layoutY="434.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="186.0" text="Hard">
+         <toggleGroup>
+            <ToggleGroup fx:id="difficulty" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbMedium" layoutX="382.0" layoutY="383.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="186.0" selected="true" text="Normal" toggleGroup="$difficulty">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbEasy" layoutX="382.0" layoutY="331.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="186.0" text="Easy" toggleGroup="$difficulty">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="340.0" layoutY="494.0" mnemonicParsing="false" onAction="#playBtn" prefHeight="57.0" prefWidth="142.0" text="Play">
+         <font>
+            <Font name="Cooper Black" size="34.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="47.0" mnemonicParsing="false" onAction="#showWelcome" prefHeight="39.0" prefWidth="87.0" text="Back">
+         <font>
+            <Font name="Cooper Black" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

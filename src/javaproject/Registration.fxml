@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="562.0" prefWidth="791.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.RegistrationController">
+   <children>
+      <Label layoutX="144.0" layoutY="24.0" prefHeight="63.0" prefWidth="504.0" text="Project GameOn">
+         <font>
+            <Font name="Castellar" size="48.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="176.0" layoutY="215.0" prefHeight="212.0" prefWidth="419.0">
+         <children>
+            <Label text="Username">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtPassword" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtUserName" GridPane.columnIndex="1" />
+            <Label text="Password" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#registerPlayer" prefHeight="37.0" prefWidth="186.0" text="Create Account" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Cooper Black" size="20.0" />
+               </font>
+            </Button>
+            <Label text="Confirm Password" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtConfirmPassword" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="209.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="271.0" minWidth="10.0" prefWidth="193.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="74.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label layoutX="121.0" layoutY="491.0" text="Login with your new account:">
+         <font>
+            <Font name="Berlin Sans FB" size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="487.0" layoutY="487.0" mnemonicParsing="false" onAction="#showLogin" text="Login Page">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblResult" layoutX="177.0" layoutY="149.0" text="Good to have a new member : )">
+         <font>
+            <Font name="Cooper Black" size="28.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@login.css" />
+   </stylesheets>
+</AnchorPane>

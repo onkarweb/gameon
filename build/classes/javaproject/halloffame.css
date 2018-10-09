@@ -1,0 +1,13 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.grid{
+    -fx-border-width: 3px;
+    -fx-border-color: gray;
+    -fx-padding: 10px;
+}

@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.text-field{
+    -fx-font-weight:bold;
+    -fx-font-size:23pt;
+    -fx-text-fill:orange;
+    
+}

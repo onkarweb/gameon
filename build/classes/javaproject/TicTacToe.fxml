@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="838.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.TicTacToeController">
+    <stylesheets>
+        <URL value="@tictactoe.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="lblHeading" alignment="CENTER" contentDisplay="CENTER" layoutX="109.0" layoutY="27.0" prefHeight="83.0" prefWidth="670.0" text="Tic Tac Toe ">
+         <font>
+            <Font name="Jokerman" size="52.0" />
+         </font>
+      </Label>
+      <StackPane layoutX="94.0" layoutY="228.0" prefHeight="438.0" prefWidth="563.0">
+         <children>
+            <GridPane fx:id="grid" alignment="CENTER" prefHeight="405.0" prefWidth="563.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btn0" mnemonicParsing="false" prefHeight="147.0" prefWidth="188.0" text="Button" />
+                  <Button fx:id="btn1" mnemonicParsing="false" prefHeight="146.0" prefWidth="191.0" text="Button" GridPane.columnIndex="1" />
+                  <Button fx:id="btn2" mnemonicParsing="false" prefHeight="146.0" prefWidth="191.0" text="Button" GridPane.columnIndex="2" />
+                  <Button fx:id="btn3" mnemonicParsing="false" prefHeight="146.0" prefWidth="191.0" text="Button" GridPane.rowIndex="1" />
+                  <Button fx:id="btn6" mnemonicParsing="false" prefHeight="146.0" prefWidth="191.0" text="Button" GridPane.rowIndex="2" />
+                  <Button fx:id="btn5" mnemonicParsing="false" prefHeight="146.0" prefWidth="191.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button fx:id="btn7" mnemonicParsing="false" prefHeight="146.0" prefWidth="191.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="btn8" mnemonicParsing="false" prefHeight="146.0" prefWidth="191.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button fx:id="btn4" mnemonicParsing="false" prefHeight="146.0" prefWidth="191.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+      <GridPane layoutX="712.0" layoutY="222.0" prefHeight="373.0" prefWidth="100.0" style="-: ;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="replayBtn" fitHeight="78.0" fitWidth="78.0" onMouseClicked="#reset" opacity="0.7" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../images/replay.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="81.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../images/pause.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Label fx:id="lblResult" alignment="CENTER" layoutX="274.0" layoutY="128.0" prefHeight="21.0" prefWidth="274.0" text="Let's see who wins" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="165.0" prefHeight="31.0" prefWidth="140.0" text="Total Score:">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblScore" layoutX="162.0" layoutY="159.0" prefHeight="43.0" prefWidth="78.0">
+         <font>
+            <Font name="Berlin Sans FB" size="39.0" />
+         </font>
+      </Label>
+      <Button layoutX="21.0" layoutY="57.0" mnemonicParsing="false" onAction="#showtttOptions" text="Back">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

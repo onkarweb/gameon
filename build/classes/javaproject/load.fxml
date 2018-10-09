@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="816.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.LoadController">
+    <stylesheets>
+        <URL value="@load.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="156.0" layoutY="38.0" prefHeight="63.0" prefWidth="505.0" text="Project GameOn">
+         <font>
+            <Font name="Castellar" size="48.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progressBar" layoutX="138.0" layoutY="351.0" prefHeight="54.0" prefWidth="541.0" progress="0.0">
+         <effect>
+            <DropShadow color="#110e0e">
+               <input>
+                  <SepiaTone />
+               </input>
+            </DropShadow>
+         </effect></ProgressBar>
+      <Label layoutX="322.0" layoutY="299.0" text="Loading">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <ProgressIndicator fx:id="prgIndicator" layoutX="432.0" layoutY="291.0" progress="0.0">
+         <effect>
+            <SepiaTone />
+         </effect></ProgressIndicator>
+   </children>
+</AnchorPane>

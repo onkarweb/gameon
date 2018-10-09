@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.imageViewCenter{
+    -fx-background-color: yellow;
+    -fx-alignment: center;
+}
+
+
+

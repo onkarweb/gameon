@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.SudokuOptionsController">
+    <stylesheets>
+        <URL value="@sudokuoptions.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="511.0" prefWidth="793.0" styleClass="mainFxmlClass">
+         <children>
+            <Label layoutX="238.0" layoutY="38.0" prefHeight="83.0" prefWidth="318.0" text="Sudoku">
+               <font>
+                  <Font name="Castellar" size="65.0" />
+               </font>
+            </Label>
+            <Button layoutX="263.0" layoutY="242.0" mnemonicParsing="false" onAction="#showNewSudokuGame" prefHeight="64.0" prefWidth="268.0" text="New Game">
+               <font>
+                  <Font name="Cooper Black" size="34.0" />
+               </font>
+            </Button>
+            <Button layoutX="221.0" layoutY="365.0" mnemonicParsing="false" onAction="#showSudokuSavedGame" prefHeight="64.0" prefWidth="353.0" text="Load Saved Game">
+               <font>
+                  <Font name="Cooper Black" size="34.0" />
+               </font>
+            </Button>
+            <Button layoutX="33.0" layoutY="57.0" mnemonicParsing="false" onAction="#showWelcome" text="Back">
+               <font>
+                  <Font name="Cooper Black" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
